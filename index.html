@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exploring Zambales - a tourism guide to the beaches, mountains and coastal towns of Zambales, Philippines.">
+  <title>Exploring Zambales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       HEADER / NAVIGATION
+       ========================================================= -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="logo" data-scroll aria-label="Exploring Zambales - back to top">
+        <img src="images/logo.png" alt="Exploring Zambales logo">
+      </a>
+
+      <!-- Hamburger: only visible on small screens -->
+      <button class="hamburger" id="hamburger" type="button"
+              aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about" data-scroll>About</a>
+        <a href="#location" data-scroll>Location</a>
+        <a href="#contact" data-scroll>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+         MAIN BANNER - DESTINATION COLLAGE
+         images/collage.jpg is the full collage including the
+         "EXPLORING ZAMBALES" title. Replace it with a larger file.
+         ========================================================= -->
+    <section class="banner" aria-label="Exploring Zambales">
+      <h1 class="visually-hidden">Exploring Zambales</h1>
+      <div class="collage">
+        <img src="images/collage.jpg" alt="Collage of Zambales destinations with the title Exploring Zambales">
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT
+         ========================================================= -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">ABOUT</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Come discover the beauty of Zambales, where every journey leads to something unforgettable. From sun-kissed shores and crystal-clear waters to lush mountain ranges, peaceful coastal towns, and scenic trails, Zambales is a destination made for exploring, unwinding and making lasting memories.</p>
+          <button class="btn" id="learn-more" type="button">Learn more</button>
+        </div>
+
+        <div class="circle about-photo">
+          <img src="images/about.webp" alt="Crater lake and mountains in Zambales">
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         LOCATION
+         Left: circular map | Center: details | Right: vertical photo carousel
+         ========================================================= -->
+    <section class="section location" id="location" aria-labelledby="location-title">
+      <h2 class="section-title" id="location-title">LOCATION</h2>
+
+      <div class="location-grid" id="location-gallery" role="group" aria-roledescription="carousel" aria-label="Zambales locations">
+
+        <!-- LEFT: circular map + name (one per location) -->
+        <div class="location-map stack">
+          <figure class="loc-item active" data-loc="0">
+            <div class="circle map-circle">
+              <img src="images/san-narciso.jpg" alt="Map of San Narciso, Zambales">
+            </div>
+            <figcaption>San Narciso</figcaption>
+          </figure>
+          <figure class="loc-item" data-loc="1">
+            <div class="circle map-circle">
+              <img src="images/loc1.png" alt="Sample map of Anawangin Cove, Zambales">
+            </div>
+            <figcaption>San Felipe</figcaption>
+          </figure>
+          <figure class="loc-item" data-loc="2">
+            <div class="circle map-circle">
+              <img src="images/loc2.png" alt="Sample map of Anawangin Cove, Zambales">
+            </div>
+            <figcaption>Palauig</figcaption>
+          </figure>
+          <figure class="loc-item" data-loc="3">
+            <div class="circle map-circle">
+              <img src="images/loc3.png" alt="Sample map of Anawangin Cove, Zambales">
+            </div>
+            <figcaption>Botolan</figcaption>
+          </figure>
+          <figure class="loc-item" data-loc="4">
+            <div class="circle map-circle">
+              <img src="images/loc4.png" alt="Sample map of Anawangin Cove, Zambales">
+            </div>
+            <figcaption>Subic</figcaption>
+          </figure>
+        </div>
+
+        <!-- CENTER: details (one per location) -->
+        <div class="location-info stack">
+          <div class="loc-item active" data-loc="0">
+            <p>View: Coastal Road Parks</p>
+            <p>Located at<br>La Paz, San Narciso, Zambales,<br>Philippines</p>
+            <p>Open: 4:00 pm<br>Opening Beachfront Foodcourt</p>
+          </div>
+          <!-- SAMPLE location: edit this text freely -->
+          <div class="loc-item" data-loc="1">
+            <p>Limliwa beach</p>
+            <p>Located at<br>San Felipe, Zambales,<br>Philippines</p>
+            <p>Liwliwa is a laid-back surf spot famous for its waves, sunsets and chill beach vibes</p>
+            <p>Open: 24 hours</p>
+          </div>
+
+            <div class="loc-item" data-loc="2">
+            <p>Bagsit River</p>
+            <p>Located at<br> Palauig, Zambales,<br>Philippines</p>
+            <p>Bagsit River is a clear,<br> peaceful river famous for its cool water and scenic rock formation</p>
+            <p>Open: 6:00 am<br>Boat tours from Pundaquit</p>
+          </div>
+
+            <div class="loc-item" data-loc="3">
+            <p>Rama International Beach Resort</p>
+            <p>Located at<br>Brgy. Binoclutan, Botolan, Zambales,<br>Philippines</p>
+            <p>Rama International Beach Resort is a serene beachfront resort known for its garden setting, outdoor pool and a sea-view restaurant</p>
+          </div>
+          
+            <div class="loc-item" data-loc="4">
+            <p>Zoobic</p>
+             <p>Located at<br>Subic Bay Free  Zone, Zambales,<br>Philippines</p>
+              <p>Zoobic Safari is a popular wildlife park famous for its close encounters with tigers,  crocodiles and other exotic animals</p>
+              <p>Opens: 4:00 pm<br>Beachfront Foodcourt</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: vertical photo with up / down arrows -->
+        <div class="location-photo">
+          <button class="arrow" id="arrow-up" type="button" aria-label="Previous location">
+            <svg viewBox="0 0 40 20" aria-hidden="true"><polyline points="3,17 20,3 37,17" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+
+          <div class="photo-frame stack" id="photo-frame" tabindex="0" aria-label="Location photo - use arrow keys or swipe to change location">
+            <img class="loc-item photo active" data-loc="0" src="images/beach.jpg" alt="Beach in San Narciso, Zambales">
+            <img class="loc-item photo" data-loc="1" src="images/picture1.png" alt="Anawangin Cove shoreline, Zambales">
+             <img class="loc-item photo" data-loc="2" src="images/picture2.jpg" alt="Anawangin Cove shoreline, Zambales">
+             <img class="loc-item photo" data-loc="3" src="images/picture3.jpg" alt="Anawangin Cove shoreline, Zambales">
+             <img class="loc-item photo" data-loc="4" src="images/picture4.jpg" alt="Anawangin Cove shoreline, Zambales">
+          </div>
+
+          <button class="arrow" id="arrow-down" type="button" aria-label="Next location">
+            <svg viewBox="0 0 40 20" aria-hidden="true"><polyline points="3,3 20,17 37,3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+
+          <p class="visually-hidden" id="photo-status" role="status" aria-live="polite"></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT
+         Left: form | Right: contact details, divider, social icons
+         Edit the contact details below directly in this HTML.
+         ========================================================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">CONTACT</h2>
+
+      <div class="contact-grid">
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+            <p class="error" id="name-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+            <p class="error" id="email-error" role="alert"></p>
+          </div>
+
+          <div class="field field-message">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" aria-describedby="message-error"></textarea>
+            <p class="error" id="message-error" role="alert"></p>
+          </div>
+
+          <div class="form-actions">
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <button class="btn" type="submit">Send</button>
+          </div>
+        </form>
+
+        <div class="contact-side">
+          <dl class="contact-details">
+            <div class="detail">
+              <dt>Email:</dt>
+              <dd><a href="mailto:danielafadera@pcb.edu.ph">danielafadera@pcb.edu.ph</a></dd>
+            </div>
+            <div class="detail detail-small">
+              <dt>Contact #1:</dt>
+              <dd><a href="tel:09158653934">09158653934</a></dd>
+            </div>
+            <div class="detail detail-small">
+              <dt>Contact #2:</dt>
+              <dd><a href="tel:09260362822">09260362822</a></dd>
+            </div>
+          </dl>
+
+          <hr class="divider">
+
+          <!-- Small decorative dots from the mockup (middle one is blue) -->
+          <div class="dots" aria-hidden="true"><i></i><i class="on"></i><i></i></div>
+
+          <!-- Social links are set in script.js (SOCIAL_LINKS). -->
+          <div class="socials">
+            <a class="social" data-social="google" href="#" aria-label="Google">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.3-.2-1.9H12v3.7h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.4 13.9a6 6 0 0 1 0-3.8V7.5H3.1a10 10 0 0 0 0 9z"/><path fill="#EA4335" d="M12 6c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 3.1 7.5l3.3 2.6C7.2 7.8 9.4 6 12 6z"/></svg>
+            </a>
+            <a class="social" data-social="facebook" href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#1877F2"/><path fill="#fff" d="M16.5 24v-9h3l.5-3.5h-3.5V9.3c0-1 .3-1.7 1.8-1.7H20V4.5c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.6H10V15h3v9z"/></svg>
+            </a>
+            <a class="social" data-social="instagram" href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".4" stop-color="#fa7e1e"/><stop offset=".7" stop-color="#d62976"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="3.3" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16.2" cy="7.8" r="1" fill="#fff"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
